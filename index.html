@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="js/multiply.js"></script>
+        <title>Ephraim's Times Table</title>
+    </head>
+    <body>
+        <h1> Ephraim's Times Table</h1>
+        <h3>Please enter ranges for table values</h3>
+        <form id="form">
+            <label for="x_begin">Minimum Column Value: </label>
+            <input type="number" id="x_begin" name="x_begin" required><br>
+
+            <label for="x_end">Maximum Column Value: </label>
+            <input type="number" id="x_end" name="x_end" required><br>
+
+            <label for="y_begin">Minimum Row Value: </label>
+            <input type="number" id="y_begin" name="y_begin" required><br>
+
+            <label for="y_end">Maximum Row Value: </label>
+            <input type="number" id="y_end" name="y_end" required><br>
+
+            <button type="button" onclick="fillTable()" id="generate_table">Generate Table</button>
+        </form>
+        <h6 id="error"></h6>
+        <div class="table-responsive" id="table_wrapper">
+            <table id="times_table" border="1" class="table table-bordered"></table>
+        </div>
+    </body>
+</html>
