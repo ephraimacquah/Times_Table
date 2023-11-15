@@ -1,6 +1,13 @@
+/*
+Name: Ephraim Acquah
+Email: Ephraim_Acquah@student.uml.edu
+*/
+
+/*the css is very simple, the only real significance is the colors 
+that I chose, and that was simply becuase I thought they looked nice*/
+
 h1{
     text-align: center;
-    color:brown;
 }
 
 h3{
@@ -17,7 +24,6 @@ form{
     background-color: antiquewhite;
     text-align: center;
 }
-
 label, input{
     margin-bottom: 10px;
     color:rgb(65, 62, 64);

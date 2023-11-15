@@ -1,3 +1,14 @@
+<!--
+File: index.html
+GUI Assignment: Creating an Interactive Dynamic Table
+File Created: 9/20/2023
+Page Description: Uses form to prompt user for maximum and minimum row and
+column values and generates a table that displays products of all rows and columns
+Ephraim Acquah, UMass Lowell Computer Science,
+Ephraim_Acquah@student.uml.edu
+Copyright (c) 2023 by Ephraim Acquah. All rights reserved.
+updated by Ephraim Acquah on November 14, 2023 at 11:01 PM
+-->
 <!DOCTYPE html>
 <html lang = "en">
     <head>
@@ -11,7 +22,7 @@
     <body>
         <h1> Ephraim's Times Table</h1>
         <h3>Please enter ranges for table values</h3>
-        <form id="form">
+        <form id="form"> <!--form to get information for maximum and minimum row and column values-->
             <label for="x_begin">Minimum Column Value: </label>
             <input type="number" id="x_begin" name="x_begin" required><br>
 
@@ -26,8 +37,8 @@
 
             <button type="button" onclick="fillTable()" id="generate_table">Generate Table</button>
         </form>
-        <h6 id="error"></h6>
-        <div class="table-responsive" id="table_wrapper">
+        <h6 id="error"></h6> <!--holds space to give error message if invalid form entries-->
+        <div class="table-responsive" id="table_wrapper"> <!-- makes table scrollable-->
             <table id="times_table" border="1" class="table table-bordered"></table>
         </div>
     </body>
